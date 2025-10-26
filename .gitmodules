@@ -1,0 +1,16 @@
+[submodule "submodules/rumdl"]
+	path = submodules/rumdl
+	url = https://github.com/najmus-sakib-hossain/rumdl.git
+	branch = forge
+[submodule "submodules/taplo"]
+	path = submodules/taplo
+	url = https://github.com/najmus-sakib-hossain/taplo.git
+	branch = forge
+[submodule "submodules/biome"]
+	path = submodules/biome
+	url = https://github.com/najmus-sakib-hossain/biome.git
+	branch = forge
+[submodule "submodules/oxc"]
+	path = submodules/oxc
+	url = https://github.com/najmus-sakib-hossain/oxc.git
+	branch = forge
