@@ -13,7 +13,7 @@ Keep it in mind that dx just makes it easy to use existing formatters and linter
 | JavaScript+TypeScript  | biome        | biome        |
 | JSON                   | biome        | biome        |
 | YAML                   | biome        | biome        |
-| Markdown               | rumdl        | N/A          |
+| Markdown               | rumdl        | rumdl        |
 | TOML                   | taplo        | taplo        |
 | Python                 | ruff         | ruff         |
 | PHP                    | mago         | mago         |
