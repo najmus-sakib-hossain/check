@@ -4,20 +4,21 @@ dx-check is one of the tools in the dx suite, offering the fastest formatting an
 
 ## Supported Languages
 
-dx-check features a revolutionary plugin system that makes adding support for other languages super easy.
 Additionally, dx-check supports the following languages out of the box:
 
-- HTML
-- CSS
-- JavaScript+TypeScript
-- Markdown
-- TOML
-- JSON
-- YAML
-- Python
-- PHP
-- Go
-- Rust
-- C
-- C++
-- Java+Kotlin
+| Language               | Linter       | Formatter    |
+|------------------------|--------------|--------------|
+| HTML                   | biome        | biome        |
+| CSS                    | biome        | biome        |
+| JavaScript+TypeScript  | biome        | biome        |
+| JSON                   | biome        | biome        |
+| YAML                   | biome        | biome        |
+| Markdown               | rumdl        | N/A          |
+| TOML                   | taplo        | taplo        |
+| Python                 | ruff         | ruff         |
+| PHP                    | mago         | mago         |
+| Go                     | gold         | gofmt.rs     |
+| Rust                   | rust-clippy  | rustfmt      |
+| C                      | cpp-linter-rs| cpp-linter-rs|
+| C++                    | cpp-linter-rs| cpp-linter-rs|
+| Java+Kotlin            | N/A          | N/A          |
