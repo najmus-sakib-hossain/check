@@ -22,4 +22,6 @@ git submodule add -b forge https://github.com/najmus-sakib-hossain/gold gold
 git submodule add -b forge https://github.com/najmus-sakib-hossain/rustfmt rustfmt
 
 git submodule add -b forge https://github.com/najmus-sakib-hossain/rust-clippy rust-clippy
+
+git submodule add -b forge https://github.com/najmus-sakib-hossain/ktlJint ktlint
 ```

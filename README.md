@@ -21,4 +21,4 @@ Additionally, dx-check supports the following languages out of the box:
 | Rust                   | rust-clippy  | rustfmt      |
 | C                      | cpp-linter-rs| cpp-linter-rs|
 | C++                    | cpp-linter-rs| cpp-linter-rs|
-| Java+Kotlin            | N/A          | N/A          |
+| Java+Kotlin            | ktlint       | ktlint       |
