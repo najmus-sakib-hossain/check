@@ -14,3 +14,27 @@
 	path = submodules/oxc
 	url = https://github.com/najmus-sakib-hossain/oxc.git
 	branch = forge
+[submodule "submodules/ruff"]
+	path = submodules/ruff
+	url = https://github.com/najmus-sakib-hossain/ruff
+	branch = forge
+[submodule "submodules/cpp-linter-rs"]
+	path = submodules/cpp-linter-rs
+	url = https://github.com/najmus-sakib-hossain/cpp-linter-rs
+	branch = forge
+[submodule "submodules/gofmt.rs"]
+	path = submodules/gofmt.rs
+	url = https://github.com/najmus-sakib-hossain/gofmt.rs
+	branch = forge
+[submodule "submodules/gold"]
+	path = submodules/gold
+	url = https://github.com/najmus-sakib-hossain/gold
+	branch = forge
+[submodule "submodules/rustfmt"]
+	path = submodules/rustfmt
+	url = https://github.com/najmus-sakib-hossain/rustfmt
+	branch = forge
+[submodule "submodules/rust-clippy"]
+	path = submodules/rust-clippy
+	url = https://github.com/najmus-sakib-hossain/rust-clippy
+	branch = forge
