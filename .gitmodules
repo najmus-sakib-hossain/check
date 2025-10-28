@@ -38,3 +38,7 @@
 	path = submodules/rust-clippy
 	url = https://github.com/najmus-sakib-hossain/rust-clippy
 	branch = forge
+[submodule "submodules/mago"]
+	path = submodules/mago
+	url = https://github.com/najmus-sakib-hossain/mago
+	branch = forge
