@@ -1,23 +1,25 @@
 # All submodules used in this project
 
 ```bash
-https://github.com/najmus-sakib-hossain/biome/tree/forge
+git submodule add -b forge https://github.com/najmus-sakib-hossain/biome biome
 
-https://github.com/najmus-sakib-hossain/oxc/tree/forge
+git submodule add -b forge https://github.com/najmus-sakib-hossain/oxc oxc
 
-https://github.com/najmus-sakib-hossain/rubmdl/tree/forge
+git submodule add -b forge https://github.com/najmus-sakib-hossain/rubmdl rubmdl
 
-https://github.com/najmus-sakib-hossain/taplo/tree/forge
+git submodule add -b forge https://github.com/najmus-sakib-hossain/taplo taplo
 
-https://github.com/najmus-sakib-hossain/ruff/tree/forge
+git submodule add -b forge https://github.com/najmus-sakib-hossain/ruff ruff
 
-https://github.com/najmus-sakib-hossain/cpp-linter-rs/tree/forge
+git submodule add -b forge https://github.com/najmus-sakib-hossain/cpp-linter-rs cpp-linter-rs
 
-https://github.com/najmus-sakib-hossain/mago
+git submodule add -b forge https://github.com/najmus-sakib-hossain/mago mago
 
-https://github.com/najmus-sakib-hossain/gofmt.rs/tree/forge
-https://github.com/najmus-sakib-hossain/gold/tree/forge
+git submodule add -b forge https://github.com/najmus-sakib-hossain/gofmt.rs gofmt.rs
 
-https://github.com/najmus-sakib-hossain/rustfmt/tree/forge
-https://github.com/najmus-sakib-hossain/rust-clippy/tree/forge
+git submodule add -b forge https://github.com/najmus-sakib-hossain/gold gold
+
+git submodule add -b forge https://github.com/najmus-sakib-hossain/rustfmt rustfmt
+
+git submodule add -b forge https://github.com/najmus-sakib-hossain/rust-clippy rust-clippy
 ```
