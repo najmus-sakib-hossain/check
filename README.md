@@ -4,7 +4,7 @@ Dx Check is a powerful tool within the dx suite, designed to deliver the fastest
 
 ## Supported Languages
 
-Keep it in mind that dx just makes it easy to use existing formatters and linters but it shines for its super easy plugin system that allows you to add more tools and even write your own custom checks.
+Keep it in mind that even through dx-check makes it easy to use existing formatters and linters but it shines for its super easy plugin system that allows you to add more tools and even write your own custom checks.
 
 | Language               | Linter       | Formatter    |
 |------------------------|--------------|--------------|
