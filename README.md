@@ -22,3 +22,70 @@ Keep it in mind that even through dx-check makes it easy to use existing formatt
 | C                      | cpp-linter-rs| cpp-linter-rs|
 | C++                    | cpp-linter-rs| cpp-linter-rs|
 | Java+Kotlin            | ktlint       | ktlint       |
+
+---
+
+## 🎉 NEW: Biome CLI + Taplo TOML Integration
+
+### Overview
+
+I've successfully integrated **Taplo** TOML formatting and linting into **Biome CLI**! Biome can now handle TOML files alongside JavaScript, TypeScript, JSON, CSS, GraphQL, and HTML.
+
+### Quick Start
+
+```bash
+# Build Biome with TOML support
+cd submodules/biome
+cargo build --release -p biome_cli
+
+# Test with the playground
+./target/release/biome check playground/
+
+# Format TOML files
+./target/release/biome format --write playground/sample.toml
+
+# Lint TOML files
+./target/release/biome lint playground/sample.toml
+```
+
+### What's New
+
+- ✅ **TOML Support**: Format and lint `.toml` files using Taplo
+- ✅ **Playground**: Sample files for all 7 supported languages
+- ✅ **Unified CLI**: Same commands work for all file types
+- ✅ **Complete Integration**: Seamless Taplo integration in Biome
+
+### Documentation
+
+| Document | Description |
+|----------|-------------|
+| [SUMMARY.md](SUMMARY.md) | Project overview and usage guide |
+| [TOML_INTEGRATION.md](TOML_INTEGRATION.md) | Technical implementation details |
+| [QUICK_REFERENCE.md](QUICK_REFERENCE.md) | Command reference cheat sheet |
+| [ARCHITECTURE.md](ARCHITECTURE.md) | Visual architecture diagrams |
+| [CHECKLIST.md](CHECKLIST.md) | Implementation task list |
+
+### Playground
+
+The `submodules/biome/playground/` directory contains comprehensive sample files:
+
+- `sample.js` - JavaScript
+- `sample.ts` - TypeScript
+- `sample.json` - JSON
+- `sample.css` - CSS
+- `sample.graphql` - GraphQL
+- `sample.html` - HTML
+- `sample.toml` - **TOML (NEW!)**
+
+### Test It
+
+```bash
+# Run the automated test script
+./test_biome_toml.sh
+
+# Or test manually
+cd submodules/biome
+./target/release/biome check playground/
+```
+
+**Status:** ✅ Integration Complete and Ready for Testing!
