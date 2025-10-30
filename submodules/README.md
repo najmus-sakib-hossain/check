@@ -1,6 +1,8 @@
 # All submodules used in this project
 
 ```bash
+git submodule add -b forge https://github.com/najmus-sakib-hossain/turborepo turborepo
+
 git submodule add -b forge https://github.com/najmus-sakib-hossain/biome biome
 
 git submodule add -b forge https://github.com/najmus-sakib-hossain/oxc oxc
@@ -24,4 +26,5 @@ git submodule add -b forge https://github.com/najmus-sakib-hossain/rustfmt rustf
 git submodule add -b forge https://github.com/najmus-sakib-hossain/rust-clippy rust-clippy
 
 git submodule add -b forge https://github.com/najmus-sakib-hossain/ktlJint ktlint
+
 ```
