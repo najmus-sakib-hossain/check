@@ -46,3 +46,7 @@
 	path = submodules/ktlint
 	url = https://github.com/najmus-sakib-hossain/ktlint
 	branch = forge
+[submodule "submodules/turborepo"]
+	path = submodules/turborepo
+	url = https://github.com/najmus-sakib-hossain/turborepo
+	branch = forge
