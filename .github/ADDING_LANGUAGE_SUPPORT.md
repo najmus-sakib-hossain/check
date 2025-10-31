@@ -539,6 +539,81 @@ cargo run -p biome_cli -- check playground/sample.py
 - Validates Python syntax and reports parse errors
 - Supports both `.py` (Python) and `.pyi` (stub) files
 
+### Example 4: C/C++ Support (via external tools)
+
+**Dependency:**
+```toml
+# None - uses external clang-format and clang-tidy binaries
+```
+
+**Key Files:**
+- `src/execute/process_file/cpp.rs` - Format, lint, and check functions using external tools
+- Extensions: `.c`, `.cpp`, `.cc`, `.cxx`, `.h`, `.hpp`, `.hxx`
+- External tools: clang-format (formatter), clang-tidy (linter)
+- Features: Industry-standard C/C++ formatting and linting, graceful degradation if tools not installed
+
+**System Requirements:**
+- `clang-format` recommended for formatting (will be auto-installed if missing)
+- `clang-tidy` recommended for linting (will be auto-installed if missing)
+- Biome automatically attempts installation using system package managers
+- Falls back to manual instructions if automatic installation fails
+
+**Usage:**
+```bash
+cargo run -p biome_cli -- format --write playground/sample.cpp
+cargo run -p biome_cli -- lint playground/sample.c
+cargo run -p biome_cli -- check playground/sample.h
+```
+
+**Results:**
+- Formats C/C++ code using clang-format (if available)
+- Lints C/C++ code using clang-tidy with --std=c++17 (if available)
+- **Automatic installation**: Attempts to install missing tools via system package managers
+  - Windows: Chocolatey or Scoop
+  - macOS: Homebrew
+  - Linux: apt-get, dnf, or pacman (auto-detects distro)
+- Falls back to manual instructions if auto-install fails
+- Supports all common C/C++ file extensions
+
+**Auto-Installation Example:**
+```
+🔧 clang-format not found. Attempting automatic installation...
+[Installing via Chocolatey/Scoop/Homebrew/apt-get...]
+✅ clang-format successfully installed!
+```
+
+**Manual Installation Fallback:**
+```
+🔧 clang-format not found. Attempting automatic installation...
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+⚠️  clang-format installation failed!
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+Automatic installation failed. Please install clang-format manually:
+
+  Windows (using Chocolatey):
+    choco install llvm
+
+  macOS (using Homebrew):
+    brew install clang-format
+
+  Ubuntu/Debian:
+    sudo apt-get update && sudo apt-get install clang-format
+
+After installation, run this command again.
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+```
+
+**Implementation Notes:**
+- Uses `std::process::Command` to invoke external binaries
+- Checks tool availability with `--version` before use
+- **Auto-installation logic**: Detects platform and tries appropriate package manager
+- Parses stdout/stderr for warnings and errors
+- Different from library-based integrations (TOML, Markdown, Python) which use Rust crates
+- This pattern is appropriate when no suitable Rust library exists for the language
+- Provides seamless user experience with automatic dependency resolution
+
 ## Common Patterns
 
 ### Line Ending Preservation
