@@ -1,5 +1,7 @@
 # Adding Language Support to Biome CLI
 
+⚠️ **Important**: Use `cargo run` instead of `cargo build` to save disk space - it only compiles what's needed!
+
 This guide explains how to add support for new languages to Biome CLI by integrating external formatters and linters at the CLI level, bypassing Biome's service layer.
 
 ## Table of Contents
@@ -510,6 +512,32 @@ rumdl = { path = "../../../rumdl" }
 cargo run -p biome_cli -- format --write playground/sample.md
 cargo run -p biome_cli -- lint playground/sample.md
 ```
+
+### Example 3: Python Support (via ruff)
+
+**Dependency:**
+```toml
+ruff_python_formatter = { path = "../../../ruff/crates/ruff_python_formatter" }
+ruff_python_ast = { path = "../../../ruff/crates/ruff_python_ast" }
+```
+
+**Key Files:**
+- `src/execute/process_file/python.rs` - Format, lint (syntax validation), and check functions
+- Extensions: `.py`, `.pyi`
+- External library: ruff_python_formatter v0.14.2
+- Features: Fast Python formatting, syntax validation
+
+**Usage:**
+```bash
+cargo run -p biome_cli -- format --write playground/sample.py
+cargo run -p biome_cli -- lint playground/sample.py
+cargo run -p biome_cli -- check playground/sample.py
+```
+
+**Results:**
+- Formats poorly formatted Python code (spacing, indentation, etc.)
+- Validates Python syntax and reports parse errors
+- Supports both `.py` (Python) and `.pyi` (stub) files
 
 ## Common Patterns
 
