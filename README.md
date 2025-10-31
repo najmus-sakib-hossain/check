@@ -6,17 +6,17 @@ Dx Check is a powerful tool within the dx suite, designed to deliver the fastest
 
 Keep it in mind that even through dx-check makes it easy to use existing formatters and linters but it shines for its super easy plugin system that allows you to add more tools and even write your own custom checks.
 
-| Language               | Linter       | Formatter    |
-|------------------------|--------------|--------------|
-| HTML                   | biome        | biome        |
-| CSS                    | biome        | biome        |
-| JavaScript+TypeScript  | biome        | biome        |
-| JSON                   | biome        | biome        |
-| Markdown               | rumdl        | rumdl        |
-| TOML                   | taplo        | taplo        |
-| Python                 | ruff         | ruff         |
-| PHP                    | mago         | mago         |
-| Go                     | gold         | gofmt.rs     |
-| Rust                   | rust-clippy  | rustfmt      |
-| C+Cpp                  | cpp-linter-rs| cpp-linter-rs|
-| Kotlin                 | ktlint       | ktlint       |
+| Language               | Linter       | Formatter    | Status |
+|------------------------|--------------|--------------|--------|
+| HTML                   | biome        | biome        | yes    |
+| CSS                    | biome        | biome        | yes    |
+| JavaScript+TypeScript  | biome        | biome        | yes    |
+| JSON                   | biome        | biome        | yes    |
+| Markdown               | rumdl        | rumdl        | yes    |
+| TOML                   | taplo        | taplo        | yes    |
+| Python                 | ruff         | ruff         | yes    |
+| C+Cpp                  | cpp-linter-rs| cpp-linter-rs| yes    |
+| Kotlin                 | ktlint       | ktlint       | yes    |
+| PHP                    | mago         | mago         | no     |
+| Go                     | gold         | gofmt.rs     | no     |
+| Rust                   | rust-clippy  | rustfmt      | no     |
