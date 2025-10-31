@@ -17,6 +17,6 @@ Keep it in mind that even through dx-check makes it easy to use existing formatt
 | Python                 | ruff         | ruff         | yes    |
 | C+Cpp                  | cpp-linter-rs| cpp-linter-rs| yes    |
 | Kotlin                 | ktlint       | ktlint       | yes    |
-| PHP                    | mago         | mago         | no     |
+| PHP                    | mago         | mago         | yes     |
 | Go                     | gold         | gofmt.rs     | no     |
 | Rust                   | rust-clippy  | rustfmt      | no     |
