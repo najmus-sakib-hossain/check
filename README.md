@@ -15,8 +15,8 @@ Keep it in mind that even through dx-check makes it easy to use existing formatt
 | Markdown               | rumdl        | rumdl        | yes    |
 | TOML                   | taplo        | taplo        | yes    |
 | Python                 | ruff         | ruff         | yes    |
-| C+Cpp                  | cpp-linter-rs| cpp-linter-rs| yes    |
-| Kotlin                 | ktlint       | ktlint       | yes    |
 | PHP                    | mago         | mago         | yes    |
 | Go                     | gold         | gofmt.rs     | yes    |
-| Rust                   | rust-clippy  | rustfmt      | no     |
+| Rust                   | rust-clippy  | rustfmt      | yes    |
+| C+Cpp                  | cpp-linter-rs| cpp-linter-rs| yes    |
+| Kotlin                 | ktlint       | ktlint       | yes    |
